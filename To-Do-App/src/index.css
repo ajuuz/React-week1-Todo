@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  /* background: linear-gradient(#ebf4f5,#b5c6e0); */
+  min-height: 100vh;
+
+}
+
+.todo-container h1{
+  font-family: Arial, sans-serif;
+}
+
+.add-button{
+  transition: all 0.2s;
+}
+
+#addTask-checkbox {
+  width: 1em;
+  height: 1em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* vertical-align: middle; */
+  border: 1px solid #a5a5a5;
+  /* appearance: none; */
+  -webkit-appearance: none;
+  /* outline: none; */
+  cursor: pointer;
+}
+
+#addTask-checkbox:checked {
+  -webkit-appearance: checkbox;
+  accent-color: green;
+  border: 1px solid #000000;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+#completedTask li{
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+#completedTask li:hover{
+  background-color: rgb(239, 239, 239);
+}
+
+.move-up:active{
+  color:rgb(0, 102, 255)
+}
+
+.move-down:active{
+  color: rgb(242, 154, 73);
+}
+
+.error-box{
+  box-shadow:inset 2px 2px 5px rgba(255,0,0,0.3) ,inset -2px -2px 5px rgba(255,0,0,0.3);
+  
+  border: 1px thick;
+  visibility: hidden;
+  transition: all 0.5s;
+  display: inline-block;
+}
